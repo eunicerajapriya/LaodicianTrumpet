@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <!-- Importing the Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes gradientBackground {
+            0% {
+                background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+            25% {
+                background: linear-gradient(to right, #f2994a, #f2c94c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+            50% {
+                background: linear-gradient(to top right, #6A0DAD, #FF7F50, #FFD700, #FFB6C1, #A2C2E8)
+            }
+            75% {
+                background: linear-gradient(to top right, #6A0DAD, #FF7F50, #FFD700, #FFB6C1, #A2C2E8)
+            }
+            100% {
+                background: linear-gradient(to top right, #6A0DAD, #FF7F50, #FFD700, #FFB6C1, #A2C2E8)
+            }
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: gradientBackground 15s ease infinite;
+            background-size: 400% 400%;
+            font-family: 'Roboto', sans-serif; /* Applying Roboto font */
+        }
+
+        .coming-soon-container {
+            text-align: center;
+        }
+
+        .circle-icon {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
+            margin: 0 auto;
+            border: 3px solid darkgoldenrod; /* Adding a subtle golden border */
+        }
+
+        .circle-icon img {
+            width: 150px;
+        }
+
+        .coming-soon-text {
+            margin-top: 20px;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .subtext {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-text {
+                font-size: 1.5rem;
+            }
+            .circle-icon {
+                width: 100px;
+                height: 100px;
+            }
+            .circle-icon img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <div class="circle-icon">
+            <img src="./coldlukewarm.png" alt="Icon">
+        </div>
+        <div class="coming-soon-text">On the Horizon</div>
+        <div class="subtext">The Truth of God's Word is About to Unfold!</div>
+    </div>
+</body>
+</html>
